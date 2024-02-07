@@ -1,0 +1,68 @@
+@import '../../styles/variables.scss';
+
+.playListContainer {
+  .listTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    h1 {
+      font-size: 24px;
+    }
+
+    button {
+      height: 30px;
+      width: 80px;
+      border-radius: 5px;
+      background-color: #59e857;
+      color: white;
+    }
+  }
+  .listItem {
+    display: flex;
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .removeList {
+    font-size: 12px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+  }
+
+  .preview {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border: 1px solid $grayD;
+    border-radius: 5px;
+    overflow: hidden;
+
+    img {
+      width: 150px;
+    }
+  }
+
+  .description {
+    padding-left: 20px;
+
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+
+    p {
+      margin-top: 8px;
+
+      span {
+        display: inline-block;
+        width: 50px;
+        color: $gray6;
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+@import '../../styles/variables.scss';
+
+.wrap {
+  width: 360px;
+  margin: 150px auto 0;
+
+  h1 {
+    font-size: 26px;
+    margin-bottom: 50px;
+  }
+
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-bottom: 20px;
+      font-weight: bold;
+
+      p {
+        margin-bottom: 8px;
+      }
+
+      input {
+        border-width: 0 0 1px;
+        border-color: $grayD;
+        outline: none;
+      }
+
+      input[type='text'],
+      input[type='password'] {
+        height: 40px;
+        width: 100%;
+      }
+
+      .errorMsg {
+        color: #f00000;
+        font-size: 13px;
+        margin-top: 8px;
+      }
+
+      .selectNumber {
+        display: flex;
+        justify-content: space-between;
+
+        select {
+          height: 40px;
+          width: 20%;
+        }
+        input {
+          width: calc(80% - 20px);
+        }
+      }
+
+      .termSection {
+        border: 1px solid $grayD;
+        padding: 10px;
+
+        span {
+          font-weight: normal;
+        }
+      }
+    }
+
+    button {
+      background-color: $theme;
+      color: white;
+
+      &:disabled {
+        background-color: $gray6;
+      }
+    }
+  }
+}

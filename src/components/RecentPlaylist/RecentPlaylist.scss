@@ -1,0 +1,11 @@
+@import '../../styles/variables.scss';
+
+.emptyList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 314px;
+  width: 100%;
+  border: 1px solid $grayD;
+  border-radius: 5px;
+}
